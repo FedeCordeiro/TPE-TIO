@@ -1,0 +1,57 @@
+ /* --------------------------              LOGIN           ------------------------- */
+
+
+ body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title-login {
+    font-size: 80px;
+}
+
+#container-form {
+    text-align: center;
+    padding: 20px;
+    border: solid;
+    border-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    position: absolute;
+    width: 17%;
+    height: 65%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+}
+
+#text-login {
+    margin-bottom: 50px;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-password, #input-user {
+    margin: 5px;
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#button-submit {
+    width: 80%;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
