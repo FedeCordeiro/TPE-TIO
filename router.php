@@ -1,3 +1,9 @@
 <?php
 
-require "templates/login.html";
+require_once 'app/models/login_model.php';
+require_once 'app/controllers/login.controller.php';
+require_once "templates/login.tpl";
+
+$controller= new login_controller();
+
+$parteURL= explode("/", $_GET["action"]);
