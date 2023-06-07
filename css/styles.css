@@ -26,6 +26,7 @@
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.829);
     color: white;
+    box-shadow: 5px 10px 10px rgba(211, 211, 211, 0.596);
 }
 
 #text-login {
