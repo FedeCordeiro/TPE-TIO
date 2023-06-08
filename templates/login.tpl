@@ -8,7 +8,7 @@
     <title>Login</title>
   </head>
   <body>
-    <h1 id = "title-login">Login</h1>
+    <h1 id = "title-login">{$title}</h1>
 
     <div id="container-form">
         <p id = "text-login">Ingresa tu nombre de usuario y contraseña en los campos correspondientes a continuación. 
@@ -25,6 +25,9 @@
           <input type="password" id="input-password" name="password" required>
           
           <input id = "button-submit" type="submit" value="Iniciar Sesión">
+  
+          <h3>{$mensaje}</h3>
+
         </form>
          
     </div>
