@@ -6,4 +6,11 @@ require_once "templates/login.tpl";
 
 $controller= new login_controller();
 
-$parteURL= explode("/", $_GET["action"]);
+$parteURL= explode('/', $_GET["action"]);
+
+//Segunda parte
+if($parteURL[0]==""){
+    $controller->login();
+
+}
+

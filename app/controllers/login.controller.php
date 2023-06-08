@@ -18,3 +18,10 @@ class login_controller{
     
 
 }
+
+// Segunda parte
+
+function login(){
+
+    $this->view-> mostrar();
+}
