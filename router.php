@@ -9,8 +9,16 @@ $controller= new login_controller();
 $parteURL= explode('/', $_GET["action"]);
 
 //Segunda parte
+
 if($parteURL[0]==""){
     $controller->login();
 
 }
 
+//Tercera parte
+
+if ($parteURL[0]=="login"){
+    $controller->home();
+}
+
+?>
