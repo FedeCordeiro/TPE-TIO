@@ -10,6 +10,17 @@ class login_model{
         echo $e;
     }
 }
+
+
+function get_usuarios($user){
+    $sentense=$this->db->prepare("SELECT*from usuarios where name=?");
+    $sentense->execute(array($user));
+    return $sentense-> fetch(PDO::FETCH_OBJ);
 }
+}
+
+
+
+
 
 ?>
