@@ -61,7 +61,18 @@
 #button-submit:hover {
     background-color: rgb(165, 165, 165);
     }
+
 #home {
     background-image: url("../img/fondoHome.jpg");
 }
+
+#title-login {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
     
