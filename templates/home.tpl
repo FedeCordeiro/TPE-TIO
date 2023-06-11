@@ -9,7 +9,7 @@
   <title>Home</title>
 </head>
 
-<body>
+<body id="home">
   <h1 id="title-login">Hello
     {foreach from=$user item=name}
       {$name}!
