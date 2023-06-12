@@ -1,24 +1,22 @@
 <?php
 
-require_once 'app/models/login_model.php';
-require_once 'app/controllers/login.controller.php';
-require_once "templates/login.tpl";
+require_once './app/models/login.model.php';
+require_once './app/controllers/login.controller.php';
 
-$controller= new login_controller();
+$controller = new login_controller();
 
-$parteURL= explode('/', $_GET["action"]);
+$action = isset($_GET['action']) ? $_GET['action'] : '';
 
-//Segunda parte
+switch ($action) {
+    case '':
+        $controller->login();
+        break;
 
-if($parteURL[0]==""){
-    $controller->login();
+    case 'login':
+        $controller->home();
+        break;
 
+    default:
+        // Acción no válida, puedes mostrar un error o redirigir a una página de error
+        break;
 }
-
-//Tercera parte
-
-if ($parteURL[0]=="login"){
-    $controller->home();
-}
-
-?>

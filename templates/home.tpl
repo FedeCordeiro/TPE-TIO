@@ -9,10 +9,14 @@
   <title>Home</title>
 </head>
 
-<body id="home">
+<body id = "home">
   <h1 id="title-login">Hello
     {foreach from=$user item=name}
       {$name}!
     {/foreach}
   </h1>
+
+  <a id="btn-volver" href="login">Home</a>
 </body>
+
+</html>

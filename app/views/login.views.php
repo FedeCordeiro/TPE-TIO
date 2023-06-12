@@ -1,6 +1,7 @@
 <?php
 
 require_once "./libs/Smarty/Smarty.class.php";
+
 class login_view {
 
     function mostrar($mensaje=''){
